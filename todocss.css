@@ -1,0 +1,162 @@
+* {
+    background-color: #6f7535;
+    color: rgb(17, 15, 15);
+    font-family: sans-serif,monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 1vh;
+    padding: auto;
+    transition-duration: 0.5s;
+    transition-property: initial;
+    transition-timing-function: ease-in-out;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-top: 1%;
+}
+header img {
+    width:  10% ;
+    
+animation: opacityTimeImg 3s infinite alternate;
+}
+@keyframes opacityTimeImg {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+hr{
+    margin: 1%;
+}
+
+.todo {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    
+  }
+  
+ 
+  .add-task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #3456b6;
+    padding: 1rem;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 13px 17px 26px 5px rgba(66, 68, 90, 1);
+  }
+  
+  .task{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 16px;
+    background-color: #5872b9;
+    color: aliceblue;
+    
+  }
+  
+  .add {
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+.add:active{
+    animation: kolor 0.1s normal;
+}
+@keyframes kolor {
+    from {background-color: #4caf50;}
+    to {background-color: rgb(179, 131, 69);}
+  }
+
+.tasks{
+    background-color: bisque;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 13px 17px 26px 5px rgba(66, 68, 90, 1);
+}
+.tasks h2{
+    background-color: bisque;
+    padding-top: 3%;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+}
+.list p {
+    background-color: bisque;
+    line-height: 5rm;
+    padding-bottom: 1rem;
+    width: auto;
+}
+.list{
+    background-color: bisque;
+    border-radius: 20px 20px 20px 20px;
+}
+.done{
+    width: 60px;
+    height: 20px;
+    background-color: rgb(106, 179, 106);
+    border: none;
+    border-radius: 5px;
+  
+}
+.done:active{
+    animation: kolor 0.1s normal;
+}
+@keyframes kolor {
+    from {background-color: rgb(106, 179, 106);}
+    to {background-color: rgb(255, 255, 255);}
+  }
+
+.newDiv{
+    display: flex;
+    width: 400px;
+    background-color: bisque;
+}
+
+
+
+
+
+
+footer {
+    height: 10%;
+    position: relative;
+    bottom: 0;
+   text-align: right;
+   z-index: -1;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* zmiany dla ekranów o szerokości <= 768px */
+  
+    .newDiv{
+    width: 100px;
+    
+    }
+    
+    
+  
+      
+  
+  }  
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        /* zmiany dla ekranów o szerokości <= 768px */
+       
+  
+        .newDiv{
+            width: 100px;
+            
+            }
+            
+      }  
